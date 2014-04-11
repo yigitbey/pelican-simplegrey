@@ -14,16 +14,7 @@
 
       <hr />
 
-      {% if loop.length  > 1 %}
-        <div>
-          <h3>Last posts</h3>
-          <ol class="archive">
-      {% endif %}
-    
-    {% elif loop.index < 7 %}
-      <li>
-        {% include 'article_link.inc.html' %}
-      </li>
+
     {% endif %}
 
 {% endfor %}
