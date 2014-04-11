@@ -5,17 +5,12 @@
 
 {% for article in articles %}
 
-    {% if loop.index == 1 %}
-
       <article>
         <h1><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
         {{ article.content }}
       </article>
 
       <hr />
-
-
-    {% endif %}
 
 {% endfor %}
           </ol>
